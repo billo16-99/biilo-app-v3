@@ -1,0 +1,401 @@
+body{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color);
+    color: var(--text-color1);
+    box-sizing: border-box;
+}
+
+:root{
+
+    --text-color1:rgb(255, 255, 255);
+    --color:rgb(0, 0, 0);
+
+}
+
+#sidebar-active{
+    display: none;
+}
+
+nav{
+    height: 60px;
+    display: flex; 
+    z-index: 90;   
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color1);
+    margin-right: 20px;
+
+}
+
+
+.links-con{
+    gap: 2vh;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.web-name{
+    display: flex;
+    margin-left: 1%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    color: var(--text-color1);
+}
+
+.search-con{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-bar::placeholder{
+    font-size: larger;
+    
+}
+
+.search-bar{
+    width: min(50em , 70%);
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+
+
+.colse-sidebar , .open-sidebar{
+    display: none;
+
+}
+
+
+
+/* page1 */
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.page1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.pop-game{
+    margin-top: 14%;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pop-game-box{
+    background-color: rgba(250, 235, 215, 0);
+    width: 100%;
+    height: max-content;
+    height: 200px;position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pop-game-con{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    background-color: rgba(255, 255, 255, 0.599);
+    width: 95%;
+    height: 350%;
+    margin-top: 21%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.row1{
+    width: 100%;
+    height: 310px;
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;
+
+    .card1{
+        margin-left: 10px;
+    }
+
+}
+
+
+.row2{
+        width: 100%;
+    height: 310px;
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;
+
+    .card1{
+        margin-left: 10px;
+    }
+}
+
+
+.row1::-webkit-scrollbar{
+    display: none;
+}
+.row2::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    width: 200px;
+    height: 260px;
+    margin: 1%;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 2;
+
+    
+    
+}
+
+
+.card-text{
+    overflow: hidden;
+
+    h3,p{
+        display: inline;
+    }
+
+
+
+    
+}
+
+
+
+
+.card img{
+    width: 200px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.page2{
+    background-color: antiquewhite;
+    top: 100%;
+    position: absolute;
+    width: 100%;
+
+    .pop-game{
+        position: absolute;
+        margin-top: 30%;
+        
+    }
+
+
+    .pop-game-con{
+        margin-top: 40%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+@media (max-width:1079px) {
+
+
+
+    h2{
+        position: absolute;
+    }
+
+    .links-con{
+        background-color: rgb(31, 30, 30);
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        position: fixed;
+        width: 30%;
+        right: -600px;
+        transition: 0.3s;
+        z-index: 99;
+
+        
+
+    }
+
+    
+
+    
+   .links-con a:hover{
+        background-color: whitesmoke;
+        color: black;
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    nav{
+        background-color: rgb(82, 79, 79);
+    }
+
+    .overly{
+        display: none;
+        position: fixed;
+        background-color: rgb(105, 24, 24);
+        width: 100%;
+        height: 200%;
+        top: 0;
+        left: 0;
+    }
+
+    a{
+        padding: 15px;
+        width: 100%;
+    }
+
+
+    
+    .search-con{
+        justify-content: center;
+    }
+
+    .colse-sidebar , .open-sidebar{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.open-sidebar{
+    margin-right: 20px;
+}
+
+#sidebar-active:checked ~ .links-con{
+    transition: 1s;
+    right: 0;
+}
+#sidebar-active:checked ~ .overly{
+    display: flex;
+}
+
+
+.row1{
+    height: 220px;
+
+}
+
+.card img{
+    width: 100px;
+    
+}
+
+h3,p{
+    font-size: 12px;
+}
+
+.card{
+    padding: 10px;
+    width: 120px;
+    height: 170px;
+    margin: -10px;
+}
+
+.pop-game-con{
+    height: 240%;
+}
+
+
+}
+
+
+
+@media (max-width:1080px) {
+
+
+
+
+    h2{
+        position: absolute;
+        font-size: 12pt;
+    }
+    
+}
+
+
+
+@media (max-width:494px) {
+
+    .links-con{
+        width: 50%;
+        position: fixed;
+    }
+
+    nav{
+        position: sticky;
+        top: 0px;
+    }
+
+
+
+    h2{
+        position: absolute;
+        font-size: 12pt;
+        
+    }
+    .pop-game{
+        color: antiquewhite;
+        margin-top: 10%;
+        font-size: 160%;
+    }
+
+    .page2{
+        top: 60%;
+    }
+    
+}
+
+@media (min-width:200px) and (max-width:380px) {
+
+        .page2{
+        top: 100%;
+        background-color: aqua;
+    }
+}
+
+
+
+
+

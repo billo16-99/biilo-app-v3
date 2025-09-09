@@ -1,0 +1,162 @@
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-box{
+    background-color: rgb(206, 206, 205);
+    padding: min(3em, 1%);
+    margin: min(20em, 2%);
+    margin-top: 30px;
+    display: flex;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.img-con{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    border: 10px solid white;
+    max-width: 100%;
+    width: min(400px,80%);
+    height: auto;
+}
+
+.text-con{
+    text-align: center;
+    width: 90%;
+    background-color: aliceblue;
+    margin: 0% 5%;
+    border-radius: 20px;
+
+    h1{
+        color: black;
+        font-size: clamp(2rem, 10vw , 1.5rem);
+    }
+
+}
+
+
+
+
+
+
+.name{
+    background-color: rgb(53, 53, 52);
+    width: 100%;
+    height: 50px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        padding: 10px;
+    }
+}
+
+.name1{
+    margin-right:auto ;
+}
+.name2{
+    background-color: rgba(88, 101, 113, 0.564);
+}
+
+
+/*  for the about of the game */
+
+.section1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+        color: white;
+        display: block;
+    }
+
+    .text-box{
+        margin: 10%;
+        font-size: clamp(1.56rem, 5vw , 1.2rem);
+
+
+    }
+}
+
+
+.section2{
+    background-color: rgb(53, 53, 52);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(255, 47, 0);
+    width: 100%;
+    height: 50px;
+    font-size: clamp(1.5rem, 5vw , 1.2rem);
+    border: none;
+    border-radius: 10px;
+
+
+    h3{
+        color: white;
+        font-weight: bolder;
+    }
+    
+}
+
+footer{
+    margin-top: 50px;
+    background-color: rgb(53, 53, 52);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.5rem, 5vw , 1.2rem);
+
+    h3{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:820px) {
+    body{
+        
+    }
+
+    .header-box{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        gap: 70px;
+        height: max-content;
+    }
+
+    .img-con{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .text-con{
+
+    }
+    
+}
